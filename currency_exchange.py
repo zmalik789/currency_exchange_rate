@@ -165,10 +165,12 @@ class DataBaseManager:
 
     def get_latest_rate(self, currency=None):
         """
-        Get the latest exchange rate for a specific currency if currency provided, otherwise it returns latest rates for all currencies.
+        Get the latest exchange rate for a specific currency if currency provided, otherwise it returns latest rates for
+         all currencies.
 
         Args:
-            currency (str, optional): The currency code for which to get the rate. If None, returns rates for all currencies.
+            currency (str, optional): The currency code for which to get the rate. If None, returns rates for all
+            currencies.
 
         Returns:
             dict: A dictionary with currency codes as keys and their latest exchange rates as values.
@@ -187,10 +189,12 @@ class DataBaseManager:
 
     def get_previous_rate(self, currency=None):
         """
-        Get the previous exchange rate for a specific currency if currency provided, otherwise it returns previous rates for all currencies..
+        Get the previous exchange rate for a specific currency if currency provided, otherwise it returns previous rates
+        for all currencies..
 
         Args:
-            currency (str, optional): The currency code for which to get the rate. If None, returns rates for all currencies.
+            currency (str, optional): The currency code for which to get the rate. If None, returns rates for all
+            currencies.
 
         Returns:
             dict: A dictionary with currency codes as keys and their previous exchange rates as values.
