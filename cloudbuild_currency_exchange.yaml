@@ -1,0 +1,7 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    entrypoint: 'bash'
+    args: [ '-c', 'docker pull ${_LATEST} || exit 0' ] 
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', '${_TAG}', '-f', './Dockerfile', '.', '--cashe-form', '${_LATEST}' ]
+images: [ '${_TAG}' ]
